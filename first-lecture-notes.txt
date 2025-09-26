@@ -1,0 +1,42 @@
+What is NODEJS?
+-> A JS runtime 
+-> used to run Javascript on server
+
+What do you mean "Javascript on server"?
+-> NODEJS uses v8 as Js engine(chrome javascript engine) written in CPP and adds some extra functionalities in it like interacting with file and all and removes some functionalities also like DOM Manipulation
+
+what does JS does?
+-> manipulates DOM
+-> mainpulates page (pop up etc.,)
+-> interact with page after it is loaded
+
+JAVASCRIPT ON THE SERVER
+
+
+|----------------------> SERVER(Database ,Authentication,Input Validation,Your Buisness Logic)      
+|                       ^ |
+|                       | |
+|               Request | | Response 
+"HTML PAGE"
+USER--------> client browser(JS,CSS,HTML)
+
+
+side note:- You're not limited to the Server!
+
+            Node.js is a javascript runtime
+                        |
+            You can use it for more than just server-side code
+                        |
+            utility scripts,build tools,..
+
+
+                    Run Server
+            (create server & listen to incoming requests)
+                        |
+                    Buisness Logic
+            (handle requests , validate input ,connect to database)
+                        |
+            Return Responses (Rendered HTML,JSON,..)
+
+"you just need one language to do all the stuff in modern web development"
+
