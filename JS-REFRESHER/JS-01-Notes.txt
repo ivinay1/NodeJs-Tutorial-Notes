@@ -1,0 +1,13 @@
+// Weakly typed
+// Object-Oriented Language
+// Versatile language
+// No explicit type assitgnment 
+// Data types can be switched dynamically
+
+// OOPS -> data can be organised in logical objects
+// primitive and reference types
+
+// run in browser and directly on a PC/server
+
+// can perform a broad variety of tasks
+
