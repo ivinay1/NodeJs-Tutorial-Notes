@@ -1,0 +1,25 @@
+
+1. How Ihs The Web Work (Refresher)?
+2. Creating a Nodejs Server
+3. Using Node Core
+4. Working with Requests & Responses
+5. Asynchronous Code & The Event Loop
+
+Some Useful CORE MODULES OF Nodejs
+https --> Launch a server. send requests
+http ---> Launch a SSL server
+fs
+path
+os
+nodejs ships with these MODULES
+
+Third Party Module
+
+app.js/server.js --> root file that makes up nodejs application
+
+
+./ --> abolsute path
+/ --> relative path
+require() --> to import any file or module to current file
+
+nodejs provides us req and res object so that we can read data from the request and we can use response object to return the response 

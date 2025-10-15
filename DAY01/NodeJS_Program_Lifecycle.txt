@@ -1,0 +1,24 @@
+  when we do "node app.js" our script runs node js reads and executes it sequentially and then "script starts" it "Parses the code,register variables and functions" but we never left that program the reason is due to an important concept known as "event loop" this is basically a loop process managed by nodejs that keeps on running as long as there are event listeners are registered and one event listener we did register is .listen() and we won't unregsier it so that our server keeps on running and listeneing reuqests to stop it "process.exit()" so all our code is managed by this event loop. NodeJS follows this event driven pattern in not this but many processes becoz it uses sngle threaded js.due to event loop italways becomes avaiable.process exit terminates theongoing process whichwas mamanged and executed by event loop now since we don't have any process to keep running for event loop so it exits and gives back control to terminal
+
+  understanding reqests
+headers --> meta data 
+
+how to parse the incoming request and get the data 
+incoming data is in the form of speial stream of data, we will use res.on('data') to first sotre all the chunks of data and then when nodejs is done witht he chunking we will use those chunks to convert them back into string using buffer.
+
+streams and buffers
+example:- incoming request
+the request is read by node in chunks in multiple parts, it is done so that we can start working on the individual chunks withut having to wait for the full request to read
+biger data bigger file more time will be taken to parse it
+stream(our strem here is our ongoing process) --> request body part1 --> request body part 2 --->  request body part3 --> request body part4 --> Fully Parsed
+to organise these incoming chunks we use a so called bufer is like a bus stop or a construct which allows to hold multiple chunks and work with them before they are realeased once you are doneand you work with the buffer
+
+the above is raw logic so dont be scared we have express framework using which we can do this very easily
+
+blocking and non blocking code
+
+nodejs is efficeint beacoz it nver blocks the code instead it tells the os do this do that and continues it exection and eventually comes back and executes call back
+
+single thread,event loop and blocking code ==> behind the scenes 
+
+event loop ==> to keep our process up running and handles callback
