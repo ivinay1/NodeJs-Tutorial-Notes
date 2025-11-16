@@ -1,0 +1,11 @@
+third party packages
+nodemon
+
+production vs development dependency
+
+local and global npm packages
+
+different type of errors
+1. Syntax errors
+2. Runtime errors
+3. Logical errors --- difficult to fix so use nodejs debugger

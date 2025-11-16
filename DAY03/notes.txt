@@ -1,0 +1,51 @@
+ EXPRESS JS
+framework and can be installed as third party package 
+
+
+what is ExpressJS?
+server logic is very complex!!!
+for e.g parsing user data 
+we want to focus on our business logic not on the nitty gritty details
+
+Framwork:- helper functions,tools and rules that help ou build your applications!!!
+
+use a framework for the heavy lifting
+
+alternatives to express JS
+1.) vanilla NodeJS
+2.) Adonis JS
+3.) Koa
+4.) sails.js  and other....,
+
+highly flexible 
+
+
+using middleware
+expressJS is all about middleware
+middleware means the incoming request is being funneled through a bunch of functions by expressJS. so instead of just having one request handler we will actually have multiple functions poking in which our request will go through untill you send the response  this allows us to split our code into multiple peices instead of having one huge function that does everything 
+THis is the pluggable nature of express JS using which we can use pre built middlewares to add certain functionalities
+
+working with requests and responses
+
+routing
+
+returning HTML Pages (FILES)
+
+body parser package for parsing the content in express js
+bodyparser.urlencoded({extended: false}) for parsing the form data
+
+
+we also have router component of express package express.Router() for making a separate router for creating specific routes and then you can register those routes to the main express applications. you can also do path filtering while routing ensure to make a separate routes folder which will contain the specific routes to the corresponding roues like you can have routes for admin in admin.js inside routes and user routes in user.js shopping routes in shop.js 
+
+for performing server side rendering you can use ejs as templating engine
+
+path module for interacting with the paths 
+
+use CSS BEM(Block element modifier) Methodology for naming classes
+
+app.get(),app.post(),etc.., does exact matching whereas app.use() do not does exact matching of path
+
+in response object send() has to be the last method chained you can chain all the other methods with response (res) object
+like :-
+res.status().setHeader()
+
