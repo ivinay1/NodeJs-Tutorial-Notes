@@ -1,0 +1,4 @@
+Dynamic content and Templates
+1.) Managing data(without database)
+2.) render dynamic content in our views
+3.) understanding templating engines
