@@ -1,0 +1,19 @@
+extends layouts/main-layout.pug 
+
+block styles 
+  title #{docTitle}
+
+block content 
+  main.shop__main.main
+    if prods.length > 0
+     section.products
+      each product in prods
+       div.product-card
+         img.product-card__img(src='https://via.placeholder.com/200' alt='Product Image')
+         h3.product-card__title #{product.title}
+         p.product-card__price ₹499
+         p.product-card__desc This is a sample product description.
+         button.product-card__btn Add to Cart
+    else 
+     h1 No Product
+

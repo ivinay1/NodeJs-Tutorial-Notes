@@ -3,14 +3,12 @@ import express from 'express';
 import path from 'path';
 import { pathParent } from '../utils/path.js';
 
+import { products } from './admin.js';
+
 export const router = express.Router();
 
 router.get('/',(req,res,next)=>{
-    console.log(" i am under user routes");
-    res.sendFile(path.join(pathParent,'views','shop.html'));
+    res.render('shop',{prods: products,pageTitle: 'Shop',path: '/',hasProducts: products.length > 0,activeShop:true,productCSS: true}) // don't need to write shop.pug as it is defined here that default engine is pug so render will render the file present in the views folder with extension as pug and name as 'shop'
+    // render method also allows us to pass the data which we want to pass to the view
 });
 
-// __dirname this is a global variable that holds the absolute path on our OS to the current folder
-// using or interacting with paths using the path module will give us the ability to execute our code in any OS as file system in diff diff OS have diff structures so we use path module which will construct/build and interact with the paths
-
-// __dirname give the path of the current folder (routes)

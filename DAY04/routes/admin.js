@@ -7,15 +7,18 @@ import { pathParent } from '../utils/path.js';
 
 export const router = express.Router();
 
+export const products = [];
+
 // registering routes to router
 
-router.post('/add-product',(req,res,next)=>{
+router.get('/add-product',(req,res,next)=>{
     console.log('In the middleware');
-    res.sendFile(path.join(pathParent,'views','addProduct.html'));
+    res.render('addProduct',{pageTitle: "Add Product",path: "/admin/add-product",productCSS: true});
 });
  
-router.post('/product',(req,res,next)=>{
-    console.log(req.body);
+router.post('/add-product',(req,res,next)=>{
+    // console.log(req.body);
+    products.push({title: req.body.title});
     res.redirect('/');
 })
 

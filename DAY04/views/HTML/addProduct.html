@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/shop.css">
+    <link rel="stylesheet" href="/css/addProduct.css">
     <title>Document</title>
 </head>
-<body class="shop">
+<body class="shop shop--add-product">
     <header class="shop__header header">
         <nav class="header__nav nav">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="/">Shop</a></li>
-                <li class="nav__item"><a class="nav__link" href="/add-product">Add Product</a></li>
+                <li class="nav__item"><a class="nav__link" href="/admin/add-product">Add Product</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="shop__main main">
+      <main class="shop__main main">
         <form class="product-form" action="/admin/add-product" method="POST">
             <input class="product-form__input" type="text" name="title">
             <button class="product-form__submit" type="submit">Add Product</button>
         </form>
     </main>
+    
 </body>
 </html>

@@ -1,0 +1,12 @@
+extends layouts/main-layout.pug 
+
+block styles
+   title #{Title}
+
+block content 
+  main.shop__main.main
+    form.product-form(action="/admin/add-product" method="POST")
+      input.product-form__input(type="text" name="title" placeholder="Product title")
+      button.product-form__submit(type="submit") Add Product
+
+
